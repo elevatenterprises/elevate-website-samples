@@ -1,35 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elevate Enterprises</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate Enterprises - Portfolio</title>
+    <style>
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #00B894;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #b2bec3;
+        }
+        .projects {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .project-card {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.3s;
+            border: 1px solid #333;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #00B894;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #636e72;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Elevate Enterprises</h1>
-    <p>Your growth partner for web, AI, and marketing solutions.</p>
-    <a href="#contact" class="cta-btn">Start a Project</a>
-  </header>
+    <header>
+        <h1>Elevate Enterprises</h1>
+        <p>Crafting Digital Excellence - Explore Our Work</p>
+    </header>
 
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li><strong>Website Development:</strong> Responsive, fast, and modern websites.</li>
-      <li><strong>AI Agents & Automation:</strong> Smart bots and systems that save time.</li>
-      <li><strong>Social Media Marketing:</strong> Growth strategies that convert.</li>
-    </ul>
-  </section>
+    <section class="projects">
+        <a href="agency.html">
+            <div class="project-card">
+                <h2>Agency Landing Page</h2>
+                <p>Modern agency homepage focused on conversions.</p>
+            </div>
+        </a>
 
-  <section class="about">
-    <h2>Why Choose Us?</h2>
-    <p>We're young, driven, and built to help small businesses scale smartly using tech and creativity.</p>
-  </section>
+        <a href="product.html">
+            <div class="project-card">
+                <h2>E-commerce Product Page</h2>
+                <p>Clean, dark-themed product showcase for online stores.</p>
+            </div>
+        </a>
 
-  <footer id="contact">
-    <p>Get in touch: elevateagency@email.com</p>
-    <p>© 2025 Elevate Enterprises</p>
-  </footer>
+        <a href="restaurant.html">
+            <div class="project-card">
+                <h2>Restaurant Website</h2>
+                <p>Elegant restaurant menu and online table booking.</p>
+            </div>
+        </a>
+
+        <a href="saas.html">
+            <div class="project-card">
+                <h2>SaaS Landing Page</h2>
+                <p>Professional SaaS company website built for conversions.</p>
+            </div>
+        </a>
+
+        <a href="portfolio.html">
+            <div class="project-card">
+                <h2>Portfolio Website</h2>
+                <p>Stylish personal portfolio for freelancers & creators.</p>
+            </div>
+        </a>
+    </section>
+
+    <footer>
+        &copy; 2025 Elevate Enterprises. All Rights Reserved.
+    </footer>
 </body>
 </html>
